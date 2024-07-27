@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="scoreContainer">
+      <h1>Rock Paper Scissors Game</h1>
+      <div class="playersScore">
+        <div class="playerScore">
+          Player
+          <span class="pScore">0</span>
+        </div>
+        <div class="computerScore">
+          Computer
+          <span class="cScore"> 0</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="gameContainer">
+      <div class="players">
+        <div class="player"><img src="./images/rock.png" alt="rock hand"></div>
+        <div class="versus">VS</div>
+        <div class="computer"><img src="./images/robotRock.png" alt="rock robot hand" /></div>
+      </div>
+      <p class="endMsg"> </p>
+      <div class="btns">
+        <div class="handsBtns">
+          <button type="button" title="hand rock btn" class="handBtn  rockHand"><i
+              class="fas fa-hand-rock"></i></button>
+          <button type="button" title="hand paper btn" class="handBtn paperHand"><i
+              class="fas fa-hand-paper"></i></button>
+          <button type="button" title="hand scissors btn" class="handBtn scissorsHand"><i
+              class="fas fa-hand-peace"></i></button>
+        </div>
+
+        <div class="gameBtns">
+          <button type="button" title="play again btn" class="playAgain">Play Again</button>
+          <button type="button" title="reset btn" class="reset">Reset</button>
+          <button type="button" title="rules btn" class="rules">Rules</button>
+        </div>
+
+      </div>
+    </div>
+        <div class="overlay">
+          <div class="modal">
+            <button class="exit" type="button">X</button>
+            <h2>Rules</h2>
+            <ul class="ruleList">
+              <li class="rule">
+                <span>Paper can cover rock</span>
+              </li>
+              <li class="rule">
+                <span>Scissors can cut paper</span>
+              </li>
+              <li class="rule">
+                <span>Rock can crush scissors</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
